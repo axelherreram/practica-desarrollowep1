@@ -7,7 +7,6 @@
 
 .body{
     background-color: rgb(251, 251, 251);
-    position: relative;
 }
 
 .header{
@@ -43,19 +42,107 @@
 }
 
 main{
+    display: flex;
+    justify-content: center;
     padding: 10px;
+}
+
+.content{
+    max-width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content .top header h2 a{
+    text-decoration: none;
+    color: #173446;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
 
 
+
+.content .botton{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content .botton header h2 a{
+    text-decoration: none;
+    color: #173446;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content-botton{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.content-botton div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.top-sidebar{
+    width: 20%;
+    height: 80vh;
+    float: left;
+    margin-left: 2%;
+    padding: 3px 3%;
+    margin-bottom: 2%s;
+}
+.top-sidebar ul{
+    list-style: none;
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    padding-top: 4px;
+}
+.top-sidebar ul li a{
+    text-decoration: none;
+    color: #173446;
+    padding: 10px;
+    font-size: 20px;
+}
+.top-sidebar ul li a:hover{
+    color : #23adca;
+}   
+
+
+.botton-sidebar{
+    max-width: 20%;
+}
 
 
 .pageFooter{
     width: 100%;
     height: 5vh;
     background-color: #173446;
-     /* position: sticky;
-    bottom: 0;  */
+     position: absolute;
+    bottom: 0; 
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
